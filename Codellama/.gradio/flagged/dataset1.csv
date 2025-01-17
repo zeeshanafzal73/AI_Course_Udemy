@@ -1,0 +1,23 @@
+prompt,output,timestamp
+"give me code of polymorphism?
+","To create polymorphism, you must use methods with identical names but different parameters (data types). You can write code like this to show polymorphism in Java: 
+public class Dog {
+  public static void bark(String name) {
+    System.out.println(""Woof woof! My name is "" + name);
+  }
+}
+
+class GoldenRetriever extends Dog {
+  public static void bark() {
+    System.out.println(""Au au, I'm a golden retriever"");
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    // Calls the method bark with no arguments
+    Dog.bark();
+    // Passes an argument to the method bark and calls it
+    GoldenRetriever.bark(""Buddy"");
+  }
+}",2025-01-02 16:19:02.123097
